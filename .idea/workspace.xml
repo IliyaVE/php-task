@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bc257ab-a84e-4f21-80cf-6591a6673837" name="Changes" comment="Added a solve for task 3">
-      <change beforePath="$PROJECT_DIR$/Task3/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Task3/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task3/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Task3/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1656563622011</updated>
       <workItem from="1656563624986" duration="4238000" />
-      <workItem from="1656568741470" duration="4028000" />
+      <workItem from="1656568741470" duration="4206000" />
     </task>
     <task id="LOCAL-00001" summary="Added a solve for task 1">
       <created>1656563834459</created>
