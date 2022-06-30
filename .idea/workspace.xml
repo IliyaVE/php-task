@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5bc257ab-a84e-4f21-80cf-6591a6673837" name="Changes" comment="Added a solve for task 3" />
+    <list default="true" id="5bc257ab-a84e-4f21-80cf-6591a6673837" name="Changes" comment="Added a solve for task 3">
+      <change afterPath="$PROJECT_DIR$/Task3/index2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task3/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Task3/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,18 +28,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/ivanin/PhpstormProjects/php-task",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ivanin/PhpstormProjects/php-task&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Task3" />
@@ -46,7 +50,15 @@
       <recent name="$PROJECT_DIR$/Task1" />
     </key>
   </component>
-  <component name="RunManager" selected="PHP Script.index.php (1)">
+  <component name="RunManager" selected="PHP Script.index2.php">
+    <configuration name="index2.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task3/index2.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 8.0" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
     <configuration name="index.php (1)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task3/index.php">
       <CommandLine>
         <PhpTestInterpreterSettings>
@@ -65,6 +77,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.index2.php" />
         <item itemvalue="PHP Script.index.php (1)" />
         <item itemvalue="PHP Script.index.php" />
       </list>
@@ -79,7 +92,8 @@
       <option name="presentableId" value="Default" />
       <updated>1656563622011</updated>
       <workItem from="1656563624986" duration="4238000" />
-      <workItem from="1656568741470" duration="4352000" />
+      <workItem from="1656568741470" duration="4206000" />
+      <workItem from="1656577879297" duration="3000000" />
     </task>
     <task id="LOCAL-00001" summary="Added a solve for task 1">
       <created>1656563834459</created>
