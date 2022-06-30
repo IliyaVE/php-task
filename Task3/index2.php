@@ -11,4 +11,4 @@ function infopath($path){
     $pathfile = preg_replace($pattern," ",$pathfile);
     return $pathfile;
 }
-echo infopath($string2);
+echo infopath($string3);
