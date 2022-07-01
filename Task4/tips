@@ -1,0 +1,1 @@
+mysql_connect(ip_address,username,pass,db_name)
