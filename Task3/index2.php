@@ -5,7 +5,7 @@ $string3 = 'c:\WebServers\home\testsite\www\myfile.7z';
 $string4 = 'c:\WebServers\home\testsite\www\myfile';
 
 function infopath($path){
-    $pattern = "/\.[a-zA-Z]+$/ui";
+    $pattern = "/\.[a-zA-Z0-9]+$/ui";
     $path = str_replace("\\" ,"/", $path);
     $pathfile = basename($path);
     $pathfile = preg_replace($pattern," ",$pathfile);
