@@ -38,7 +38,7 @@
 
 $spaces_start = "&nbsp&nbsp&nbsp&nbsp";
 $spaces_middle = "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
-$con = mysqli_connect("localhost:8001", "root", "test", "test_php");
+$con = mysqli_connect("localhost:3306", "root", "test", "test_php");
 if ($con == false) {
     print("Ошибка: Невозможно подключиться к Базе Данных" . mysqli_connect_error());
     exit;
