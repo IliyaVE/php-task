@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bc257ab-a84e-4f21-80cf-6591a6673837" name="Changes" comment="Added a solve for task 4">
-      <change afterPath="$PROJECT_DIR$/Task4/action.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task4/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Task4/tips" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task4/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task4/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/Task4/action.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task4/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +18,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/consoles/db/66a02747-6f37-4407-a935-06955ccf34ce/console.sql" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Task4/README.md" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Task4/action.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Task4/index.php" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Task4/tips" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -26,6 +32,9 @@
     <include_path>
       <path value="" />
     </include_path>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2BHWivpKa6lw8fXLCO5m33TRhVY" />
   <component name="ProjectLevelVcsManager">
@@ -63,11 +72,29 @@
       <recent name="$PROJECT_DIR$/Task1" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/php-task/php-task/Task4/index.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.index.php (1)">
+    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/php-task/Task4/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="index2.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task3/index2.php">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/php-task/Task4/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" uri="http://localhost:63342/php-taskTask4/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" uri="http://localhost:63342/php-task/Task4/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/php-task/Task4/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php (1)" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/php-task/Task4/index.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/php-task/Task4/index.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php " type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task4/action.php">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="PHP 8.0" />
@@ -75,7 +102,7 @@
       </CommandLine>
       <method v="2" />
     </configuration>
-    <configuration name="index.php (1)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task3/index.php">
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task4/index.php">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="PHP 8.0" />
@@ -83,29 +110,21 @@
       </CommandLine>
       <method v="2" />
     </configuration>
-    <configuration name="index.php (2)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task4/action.php">
-      <CommandLine>
-        <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="PHP 8.0" />
-        </PhpTestInterpreterSettings>
-      </CommandLine>
-      <method v="2" />
-    </configuration>
-    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task2/index.php">
-      <CommandLine>
-        <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="PHP 8.0" />
-        </PhpTestInterpreterSettings>
-      </CommandLine>
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.index.php (1)" />
+      <item itemvalue="JavaScript Debug.index.php" />
+      <item itemvalue="JavaScript Debug.index.html (1)" />
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="PHP Script.index.php" />
+      <item itemvalue="PHP Script.index.php " />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="PHP Script.index.php (2)" />
-        <item itemvalue="PHP Script.index2.php" />
-        <item itemvalue="PHP Script.index.php (1)" />
         <item itemvalue="PHP Script.index.php" />
+        <item itemvalue="JavaScript Debug.index.php" />
+        <item itemvalue="PHP Script.index.php " />
+        <item itemvalue="JavaScript Debug.index.html (1)" />
+        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -120,6 +139,9 @@
       <workItem from="1656563624986" duration="4238000" />
       <workItem from="1656568741470" duration="4206000" />
       <workItem from="1656577879297" duration="20962000" />
+      <workItem from="1656668825427" duration="10909000" />
+      <workItem from="1656906895236" duration="7795000" />
+      <workItem from="1656930353712" duration="5680000" />
     </task>
     <task id="LOCAL-00001" summary="Added a solve for task 1">
       <created>1656563834459</created>
@@ -198,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656655715128</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added a solve for task 4">
+      <created>1656668842329</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1656668842329</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
