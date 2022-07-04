@@ -1,5 +1,5 @@
 <?php
-$link = mysqli_connect('localhost:8001' , 'root','test','test_php');
+$link = mysqli_connect('localhost:3306' , 'root','test','test_php');
 
 if ($link == false){
     print("Ошибка: Невозможно подключиться в Базе Данных". mysqli_connect_error());
