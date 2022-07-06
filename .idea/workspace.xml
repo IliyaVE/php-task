@@ -4,7 +4,6 @@
     <list default="true" id="5bc257ab-a84e-4f21-80cf-6591a6673837" name="Changes" comment="Added a solve for task 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task4/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/Task4/action.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task4/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Task4/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +132,7 @@
       <workItem from="1656668825427" duration="10909000" />
       <workItem from="1656906895236" duration="7795000" />
       <workItem from="1656930353712" duration="6454000" />
-      <workItem from="1657100714088" duration="135000" />
+      <workItem from="1657100714088" duration="931000" />
     </task>
     <task id="LOCAL-00001" summary="Added a solve for task 1">
       <created>1656563834459</created>
@@ -226,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656937685351</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added a solve for task 4">
+      <created>1657100884289</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1657100884289</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
