@@ -2,28 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bc257ab-a84e-4f21-80cf-6591a6673837" name="Changes" comment="Added a solve for task 4">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task4/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/Task4/action.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task4/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Task4/index.php" afterDir="false" />
     </list>
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task4/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/Task4/action.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+>>>>>>> e3c671740bfb4cd9968d3e154711b4c3b5138bf8
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution />
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/consoles/db/66a02747-6f37-4407-a935-06955ccf34ce/console.sql" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Task4/README.md" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Task4/action.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Task4/index.php" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Task4/tips" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Task4/index.php" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Task4/action.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Task4/README.md" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,6 +54,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
@@ -64,6 +73,11 @@
     ]
   }
 }]]></component>
+=======
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+>>>>>>> e3c671740bfb4cd9968d3e154711b4c3b5138bf8
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Task3" />
@@ -73,6 +87,18 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Task1" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.php (1)">
     <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/php-task/Task4/index.html" useBuiltInWebServerPort="true">
@@ -97,19 +123,9 @@
       <method v="2" />
     </configuration>
     <configuration name="index.php " type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task4/action.php">
-      <CommandLine>
-        <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="PHP 8.0" />
-        </PhpTestInterpreterSettings>
-      </CommandLine>
       <method v="2" />
     </configuration>
     <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Task4/index.php">
-      <CommandLine>
-        <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="PHP 8.0" />
-        </PhpTestInterpreterSettings>
-      </CommandLine>
       <method v="2" />
     </configuration>
     <list>
@@ -130,7 +146,10 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5bc257ab-a84e-4f21-80cf-6591a6673837" name="Changes" comment="" />
@@ -143,7 +162,12 @@
       <workItem from="1656577879297" duration="20962000" />
       <workItem from="1656668825427" duration="10909000" />
       <workItem from="1656906895236" duration="7795000" />
+<<<<<<< HEAD
       <workItem from="1656930353712" duration="13427000" />
+=======
+      <workItem from="1656930353712" duration="6454000" />
+      <workItem from="1657100714088" duration="931000" />
+>>>>>>> e3c671740bfb4cd9968d3e154711b4c3b5138bf8
     </task>
     <task id="LOCAL-00001" summary="Added a solve for task 1">
       <created>1656563834459</created>
@@ -237,24 +261,34 @@
       <updated>1656937685351</updated>
     </task>
     <task id="LOCAL-00014" summary="Added a solve for task 4">
+<<<<<<< HEAD
       <created>1656951475986</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1656951475986</updated>
+=======
+      <created>1657100884289</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1657100884289</updated>
+>>>>>>> e3c671740bfb4cd9968d3e154711b4c3b5138bf8
     </task>
     <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

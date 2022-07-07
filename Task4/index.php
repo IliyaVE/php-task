@@ -20,9 +20,9 @@
     <label>Номер класса: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="NumberClass"></label><br>
     <p>Стипендия &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <select name="Grands">
-        <option value="1">Да</option>
-        <option value="0">Нет</option>
-    </select>
+            <option value="1">Да</option>
+            <option value="0">Нет</option>
+        </select>
     </p>
     <label>Бал за семестр: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="Grades"></label><br><br>
     <label>Рейтинг универа: &nbsp&nbsp&nbsp<input type="text" name="ScoreOfUniversity"></label><br><br>
@@ -38,11 +38,12 @@
 
 $spaces_start = "&nbsp&nbsp&nbsp&nbsp";
 $spaces_middle = "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
-$con = mysqli_connect("localhost:8001", "root", "test", "test_php");
+$con = mysqli_connect("localhost:3306", "iliya", "test", "test_php");
 if ($con == false) {
     print("Ошибка: Невозможно подключиться к Базе Данных" . mysqli_connect_error());
     exit;
 }
+<<<<<<< HEAD
 $resultAll = mysqli_query($con,"SELECT * FROM list_students");
 $resultStudents = mysqli_query($con,"SELECT LastName, FirstName, NumberClass, CountGrands FROM list_students WHERE CountGrands >= 100");
 $resultUniversity = mysqli_query($con,"SELECT LastName, FirstName, ScoreOfUniversity FROM test_php.list_students WHERE ScoreOfUniversity > 300");
@@ -51,6 +52,16 @@ $resultGrades = mysqli_query($con,"SELECT LastName, FirstName, NumberClass FROM 
 $resultMinScore = mysqli_query($con,"SELECT LastName, FirstName, NumberClass, min_score FROM test_php.list_students");
 $resultMaxScore = mysqli_query($con,"SELECT LastName, FirstName, NumberClass, max_score  FROM test_php.list_students");
 $resultAlpList = mysqli_query($con,"SELECT LastName, FirstName FROM test_php.list_students WHERE LastName LIKE 'v%' ORDER BY min_score ASC ");
+=======
+$resultAll = mysqli_query($con,"SELECT * FROM test_php");
+$resultStudents = mysqli_query($con,"SELECT LastName, FirstName, NumberClass, CountGrands FROM test_php WHERE CountGrands >= 100");
+$resultUniversity = mysqli_query($con,"SELECT LastName, FirstName, ScoreOfUniversity FROM test_php.test_php WHERE ScoreOfUniversity > 300");
+$resultOnePerson = mysqli_query($con,"SELECT LastName, FirstName, Years FROM test_php.test_php WHERE ID=12");
+$resultGrades = mysqli_query($con,"SELECT LastName, FirstName, NumberClass FROM test_php.test_php WHERE test_php.Grades = 150");
+$resultMinScore = mysqli_query($con,"SELECT LastName, FirstName, NumberClass, min_score FROM test_php.test_php");
+$resultMaxScore = mysqli_query($con,"SELECT LastName, FirstName, NumberClass, max_score  FROM test_php.test_php");
+$resultAlpList = mysqli_query($con,"SELECT LastName, FirstName FROM test_php.test_php ORDER BY min_score ASC");
+>>>>>>> e3c671740bfb4cd9968d3e154711b4c3b5138bf8
 
 echo "<h1>Весь список с данными</h1>";
 echo "<table border='1'>
@@ -68,17 +79,17 @@ echo "<table border='1'>
 
 while($row = mysqli_fetch_array($resultAll))
 {
-echo "<tr >";
-echo "<td>".$row['LastName']."</td>";
-echo "<td>".$row['FirstName']."</td>";
-echo "<td>".$row['Years']."</td>";
-echo "<td>".$row['City']."</td>";
-echo "<td>".$row['NumberClass']."</td>";
-echo "<td>".$row['Grands']."</td>";
-echo "<td>".$row['CountGrands']."</td>";
-echo "<td>".$row['Grades']."</td>";
-echo "<td>".$row['ScoreOfUniversity']."</td>";
-echo "</tr>";
+    echo "<tr >";
+    echo "<td>".$row['LastName']."</td>";
+    echo "<td>".$row['FirstName']."</td>";
+    echo "<td>".$row['Years']."</td>";
+    echo "<td>".$row['City']."</td>";
+    echo "<td>".$row['NumberClass']."</td>";
+    echo "<td>".$row['Grands']."</td>";
+    echo "<td>".$row['CountGrands']."</td>";
+    echo "<td>".$row['Grades']."</td>";
+    echo "<td>".$row['ScoreOfUniversity']."</td>";
+    echo "</tr>";
 }
 echo "</table>";
 
