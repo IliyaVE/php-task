@@ -46,11 +46,11 @@ if ($con == false) {
 $resultAll = mysqli_query($con,"SELECT * FROM list_students");
 $resultStudents = mysqli_query($con,"SELECT LastName, FirstName, NumberClass, CountGrands FROM list_students WHERE CountGrands >= 100");
 $resultUniversity = mysqli_query($con,"SELECT LastName, FirstName, ScoreOfUniversity FROM test_php.list_students WHERE ScoreOfUniversity > 300");
-$resultOnePerson = mysqli_query($con,"SELECT LastName, FirstName, Years FROM test_php.list_students WHERE ID=12");
+$resultOnePerson = mysqli_query($con,"select concat(LastName,' ',FirstName,' родился в ', Years) as Name from list_students;");
 $resultGrades = mysqli_query($con,"SELECT LastName, FirstName, NumberClass FROM test_php.list_students WHERE list_students.Grades = 150");
 $resultMinScore = mysqli_query($con,"SELECT LastName, FirstName, NumberClass, min_score FROM test_php.list_students");
 $resultMaxScore = mysqli_query($con,"SELECT LastName, FirstName, NumberClass, max_score  FROM test_php.list_students");
-$resultAlpList = mysqli_query($con,"SELECT LastName, FirstName FROM test_php.list_students ORDER BY min_score ASC");
+$resultAlpList = mysqli_query($con,"SELECT LastName, FirstName FROM test_php.list_students WHERE LastName LIKE 'v%' ORDER BY min_score ASC ");
 
 echo "<h1>Весь список с данными</h1>";
 echo "<table border='1'>
@@ -142,35 +142,12 @@ while($row = mysqli_fetch_array($resultStudents))
 }
 echo "</table>";
 
-echo "<h1>Запись с одним человеком</h1>";
-echo "<table border='1'>
-    <tr>
-        <th>Фамилия</th>
-        <th>Имя</th>
-        <th>Год рождения</th>
-        <th>Город</th>
-        <th>Номер класса</th>
-        <th>Стипендия</th>
-        <th>Выплата</th>
-        <th>Бал за семестр</th>
-        <th>Рейтинг универа</th>
-    </tr>";
+echo "<h1>Запись с одним человеком</h1><br>";
 
 while($row = mysqli_fetch_array($resultOnePerson))
 {
-    echo "<tr >";
-    echo "<td>".$row['LastName']."</td>";
-    echo "<td>".$row['FirstName']."</td>";
-    echo "<td>".$row['Years']."</td>";
-    echo "<td>".$row['City']."</td>";
-    echo "<td>".$row['NumberClass']."</td>";
-    echo "<td>".$row['Grands']."</td>";
-    echo "<td>".$row['CountGrands']."</td>";
-    echo "<td>".$row['Grades']."</td>";
-    echo "<td>".$row['ScoreOfUniversity']."</td>";
-    echo "</tr>";
-}
-echo "</table>";
+    echo $row[0]."<br>";
+};
 
 echo "<h1>Список студенов с оценкой 150</h1>";
 echo "<table border='1'>
@@ -286,7 +263,7 @@ echo "<table border='1'>
         <th>Максимальная оценка</th>
     </tr>";
 
-while($row = mysqli_fetch_array($resultMaxScore))
+while($row = mysqli_fetch_array($resultAlpList))
 {
     echo "<tr >";
     echo "<td>".$row['LastName']."</td>";
