@@ -38,13 +38,13 @@
 
 $spaces_start = "&nbsp&nbsp&nbsp&nbsp";
 $spaces_middle = "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
-$con = mysqli_connect("localhost:3306", "iliya", "test", "test_php");
+$con = mysqli_connect("localhost:8001", "root", "test", "universities");
 if ($con == false) {
     print("Ошибка: Невозможно подключиться к Базе Данных" . mysqli_connect_error());
     exit;
 }
-<<<<<<< HEAD
-$resultAll = mysqli_query($con,"SELECT * FROM list_students");
+
+$resultAll = mysqli_query($con,"SELECT * FROM universities.ustudents");
 $resultStudents = mysqli_query($con,"SELECT LastName, FirstName, NumberClass, CountGrands FROM list_students WHERE CountGrands >= 100");
 $resultUniversity = mysqli_query($con,"SELECT LastName, FirstName, ScoreOfUniversity FROM test_php.list_students WHERE ScoreOfUniversity > 300");
 $resultOnePerson = mysqli_query($con,"select concat(LastName,' ',FirstName,' родился в ', Years) as Name from list_students;");
@@ -52,7 +52,6 @@ $resultGrades = mysqli_query($con,"SELECT LastName, FirstName, NumberClass FROM 
 $resultMinScore = mysqli_query($con,"SELECT LastName, FirstName, NumberClass, min_score FROM test_php.list_students");
 $resultMaxScore = mysqli_query($con,"SELECT LastName, FirstName, NumberClass, max_score  FROM test_php.list_students");
 $resultAlpList = mysqli_query($con,"SELECT LastName, FirstName FROM test_php.list_students WHERE LastName LIKE 'v%' ORDER BY min_score ASC ");
-=======
 $resultAll = mysqli_query($con,"SELECT * FROM test_php");
 $resultStudents = mysqli_query($con,"SELECT LastName, FirstName, NumberClass, CountGrands FROM test_php WHERE CountGrands >= 100");
 $resultUniversity = mysqli_query($con,"SELECT LastName, FirstName, ScoreOfUniversity FROM test_php.test_php WHERE ScoreOfUniversity > 300");
@@ -61,7 +60,7 @@ $resultGrades = mysqli_query($con,"SELECT LastName, FirstName, NumberClass FROM 
 $resultMinScore = mysqli_query($con,"SELECT LastName, FirstName, NumberClass, min_score FROM test_php.test_php");
 $resultMaxScore = mysqli_query($con,"SELECT LastName, FirstName, NumberClass, max_score  FROM test_php.test_php");
 $resultAlpList = mysqli_query($con,"SELECT LastName, FirstName FROM test_php.test_php ORDER BY min_score ASC");
->>>>>>> e3c671740bfb4cd9968d3e154711b4c3b5138bf8
+
 
 echo "<h1>Весь список с данными</h1>";
 echo "<table border='1'>
@@ -92,206 +91,6 @@ while($row = mysqli_fetch_array($resultAll))
     echo "</tr>";
 }
 echo "</table>";
-
-echo "<h1>Список универов выше 300</h1>";
-echo "<table border='1'>
-    <tr>
-        <th>Фамилия</th>
-        <th>Имя</th>
-        <th>Год рождения</th>
-        <th>Город</th>
-        <th>Номер класса</th>
-        <th>Стипендия</th>
-        <th>Выплата</th>
-        <th>Бал за семестр</th>
-        <th>Рейтинг универа</th>
-    </tr>";
-
-while($row = mysqli_fetch_array($resultUniversity))
-{
-    echo "<tr >";
-    echo "<td>".$row['LastName']."</td>";
-    echo "<td>".$row['FirstName']."</td>";
-    echo "<td>".$row['Years']."</td>";
-    echo "<td>".$row['City']."</td>";
-    echo "<td>".$row['NumberClass']."</td>";
-    echo "<td>".$row['Grands']."</td>";
-    echo "<td>".$row['CountGrands']."</td>";
-    echo "<td>".$row['Grades']."</td>";
-    echo "<td>".$row['ScoreOfUniversity']."</td>";
-    echo "</tr>";
-}
-echo "</table>";
-
-echo "<h1>Список студентов со стипендией выше 100</h1>";
-echo "<table border='1'>
-    <tr>
-        <th>Фамилия</th>
-        <th>Имя</th>
-        <th>Год рождения</th>
-        <th>Город</th>
-        <th>Номер класса</th>
-        <th>Стипендия</th>
-        <th>Выплата</th>
-        <th>Бал за семестр</th>
-        <th>Рейтинг универа</th>
-    </tr>";
-
-while($row = mysqli_fetch_array($resultStudents))
-{
-    echo "<tr >";
-    echo "<td>".$row['LastName']."</td>";
-    echo "<td>".$row['FirstName']."</td>";
-    echo "<td>".$row['Years']."</td>";
-    echo "<td>".$row['City']."</td>";
-    echo "<td>".$row['NumberClass']."</td>";
-    echo "<td>".$row['Grands']."</td>";
-    echo "<td>".$row['CountGrands']."</td>";
-    echo "<td>".$row['Grades']."</td>";
-    echo "<td>".$row['ScoreOfUniversity']."</td>";
-    echo "</tr>";
-}
-echo "</table>";
-
-echo "<h1>Запись с одним человеком</h1><br>";
-
-while($row = mysqli_fetch_array($resultOnePerson))
-{
-    echo $row[0]."<br>";
-};
-
-echo "<h1>Список студенов с оценкой 150</h1>";
-echo "<table border='1'>
-    <tr>
-        <th>Фамилия</th>
-        <th>Имя</th>
-        <th>Год рождения</th>
-        <th>Город</th>
-        <th>Номер класса</th>
-        <th>Стипендия</th>
-        <th>Выплата</th>
-        <th>Бал за семестр</th>
-        <th>Рейтинг универа</th>
-    </tr>";
-
-while($row = mysqli_fetch_array($resultGrades))
-{
-    echo "<tr >";
-    echo "<td>".$row['LastName']."</td>";
-    echo "<td>".$row['FirstName']."</td>";
-    echo "<td>".$row['Years']."</td>";
-    echo "<td>".$row['City']."</td>";
-    echo "<td>".$row['NumberClass']."</td>";
-    echo "<td>".$row['Grands']."</td>";
-    echo "<td>".$row['CountGrands']."</td>";
-    echo "<td>".$row['Grades']."</td>";
-    echo "<td>".$row['ScoreOfUniversity']."</td>";
-    echo "</tr>";
-}
-echo "</table>";
-
-echo "<h1>Список студенов с минимальной оценкой</h1>";
-echo "<table border='1'>
-    <tr>
-        <th>Фамилия</th>
-        <th>Имя</th>
-        <th>Год рождения</th>
-        <th>Город</th>
-        <th>Номер класса</th>
-        <th>Стипендия</th>
-        <th>Выплата</th>
-        <th>Бал за семестр</th>
-        <th>Рейтинг универа</th>
-        <th>Минимальная оценка</th>
-        <th>Максимальная оценка</th>
-    </tr>";
-
-while($row = mysqli_fetch_array($resultMinScore))
-{
-    echo "<tr >";
-    echo "<td>".$row['LastName']."</td>";
-    echo "<td>".$row['FirstName']."</td>";
-    echo "<td>".$row['Years']."</td>";
-    echo "<td>".$row['City']."</td>";
-    echo "<td>".$row['NumberClass']."</td>";
-    echo "<td>".$row['Grands']."</td>";
-    echo "<td>".$row['CountGrands']."</td>";
-    echo "<td>".$row['Grades']."</td>";
-    echo "<td>".$row['ScoreOfUniversity']."</td>";
-    echo "<td>".$row['min_score']."</td>";
-    echo "<td>".$row['max_score']."</td>";
-    echo "</tr>";
-}
-echo "</table>";
-
-echo "<h1>Список студенов с макисмальной оценкой</h1>";
-echo "<table border='1'>
-    <tr>
-        <th>Фамилия</th>
-        <th>Имя</th>
-        <th>Год рождения</th>
-        <th>Город</th>
-        <th>Номер класса</th>
-        <th>Стипендия</th>
-        <th>Выплата</th>
-        <th>Бал за семестр</th>
-        <th>Рейтинг универа</th>
-        <th>Минимальная оценка</th>
-        <th>Максимальная оценка</th>
-    </tr>";
-
-while($row = mysqli_fetch_array($resultMaxScore))
-{
-    echo "<tr >";
-    echo "<td>".$row['LastName']."</td>";
-    echo "<td>".$row['FirstName']."</td>";
-    echo "<td>".$row['Years']."</td>";
-    echo "<td>".$row['City']."</td>";
-    echo "<td>".$row['NumberClass']."</td>";
-    echo "<td>".$row['Grands']."</td>";
-    echo "<td>".$row['CountGrands']."</td>";
-    echo "<td>".$row['Grades']."</td>";
-    echo "<td>".$row['ScoreOfUniversity']."</td>";
-    echo "<td>".$row['min_score']."</td>";
-    echo "<td>".$row['max_score']."</td>";
-    echo "</tr>";
-}
-echo "</table>";
-
-echo "<h1>Список студенов с определенной буквы</h1>";
-echo "<table border='1'>
-    <tr>
-        <th>Фамилия</th>
-        <th>Имя</th>
-        <th>Год рождения</th>
-        <th>Город</th>
-        <th>Номер класса</th>
-        <th>Стипендия</th>
-        <th>Выплата</th>
-        <th>Бал за семестр</th>
-        <th>Рейтинг универа</th>
-        <th>Минимальная оценка</th>
-        <th>Максимальная оценка</th>
-    </tr>";
-
-while($row = mysqli_fetch_array($resultAlpList))
-{
-    echo "<tr >";
-    echo "<td>".$row['LastName']."</td>";
-    echo "<td>".$row['FirstName']."</td>";
-    echo "<td>".$row['Years']."</td>";
-    echo "<td>".$row['City']."</td>";
-    echo "<td>".$row['NumberClass']."</td>";
-    echo "<td>".$row['Grands']."</td>";
-    echo "<td>".$row['CountGrands']."</td>";
-    echo "<td>".$row['Grades']."</td>";
-    echo "<td>".$row['ScoreOfUniversity']."</td>";
-    echo "<td>".$row['min_score']."</td>";
-    echo "<td>".$row['max_score']."</td>";
-    echo "</tr>";
-}
-echo "</table>";
-
 
 ?>
 </body>
